@@ -17,35 +17,50 @@
 
 <link type="text/css" rel="stylesheet" href="https://www.dunelm.com/infodocs/css/site_category_styles.css">
 
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
 
 
 <style>
+
+/* OVERWRITES */
 
 .section-container {
     margin-bottom: -80px;
     z-index: -1;
 }
 
+p {
+	width:auto!important;	
+}
+
+/* MAIN */
+
 body {
-	padding-top: 80px;
+	padding: 80px 2% 0;
 	max-width: 1200px;
-	width: 100%;
 	margin: 0 auto;
+
 }
 .sidebar {
     float: left;
-    padding-right: 2%;
-    width: 17.5%;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    width: 20%;
+padding-right:2%;
     height: 2000px
 }
 .content {
-    border-left: 1px solid #ccc;
+    box-sizing: border-box;
     float: left;
-    padding-left: 2%;
-    width: 78%;
+padding-left:2%;
+    width: 80%;
 }
 
+
+/* COPY CODE BUTTON */
 
 
 textarea { position: absolute; margin-left: -9999px; } 
@@ -93,6 +108,25 @@ button:active {
 	transition: all .1s ease;
 
 }
+
+
+@media screen and (max-width: 650px) {
+
+.sidebar {
+	display: none;
+}
+  
+  
+.content {
+    padding-left: 0;
+    width: 100%;
+}
+
+
+
+}
+
+
 </style>
 
 </head>
