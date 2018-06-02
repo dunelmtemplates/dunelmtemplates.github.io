@@ -25,69 +25,104 @@
 
 <style>
 
+
 /* OVERWRITES */
 
-.section-container {
-    margin-bottom: -80px;
-    z-index: -1;
+.secftion-container {
+	margin-bottom: -80px;
+	z-index: -1;
+}
+p {
+	width: auto!important;
 }
 
-p {
-	width:auto!important;	
-}
+
 
 /* MAIN */
 
+a {
+	font-family: Nunito Sans;
+}
 body {
-	padding: 80px 2% 0;
+	padding: 40px 0.625em 0;
 	max-width: 1200px;
 	margin: 0 auto;
-
 }
 .sidebar {
-    float: left;
-    box-sizing: border-box;
-    border-right: 1px solid #ccc;
-    width: 20%;
-padding-right:2%;
-    height: 2000px
+	float: left;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	width: 20%;
+	padding-right: 1.25em;
+	height: 2000px
 }
 .content {
-    box-sizing: border-box;
-    float: left;
-padding-left:2%;
-    width: 80%;
+	box-sizing: border-box;
+	float: left;
+	padding-left: 1.25em;
+	width: 80%;
 }
+#back-to-main {
+    color: #ee6612;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+}
+ a#back-to-main:hover {
+    text-decoration: underline;
+}
+.sidebar h4 {
+    border-top: 1px dashed #ccc;
+    color: #333;
+    display: block;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 700;
+	margin: 16px 0 0;
+    padding: 16px 6px 2px 0;
+}
+.sidebar > a {
+    display: block;
+	color: #333;
+    font-size: 15px;
+    padding: 2px 6px 2px 0;
+    text-decoration: none;
+}
+.sidebar > a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 /* COPY CODE BUTTON */
-
-
-textarea { position: absolute; margin-left: -9999px; } 
-
-
-.btn-container {
-	clear: both;
-	text-align: center;
-  margin-bottom: 80px;
-
+textarea {
+	position: absolute;
+	margin-left: -9999px;
 }
-
+.btn-container {
+    bottom: 5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
 button {
-    color: #fff;
-  cursor:pointer;
-  font-family:nunito sans;
-    background-color: rgba(219,87,5,1);
-    font-weight: 400;
-  letter-spacing:0.075em;
-  text-transform:uppercase;
-    font-size: 18px;
-    display: block;
-    padding: 4px 14px;
-    -webkit-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
-    -moz-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
-    box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
-    margin: 0 auto;
+	color: #fff;
+	cursor: pointer;
+	font-family: nunito sans;
+	background-color: rgba(219,87,5,1);
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	font-size: 18px;
+	display: block;
+	padding: 4px 14px;
+	-webkit-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
+	box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
+	margin: 0 auto;
 	width: auto;
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
@@ -95,49 +130,62 @@ button {
 	-o-transition: all .2s ease;
 	transition: all .2s ease;
 }
-
 button:active {
-    -webkit-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
-    -moz-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
-    box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
-    position: relative;
-  	-webkit-transition: all .1s ease;
+	-webkit-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
+	box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
+	position: relative;
+	-webkit-transition: all .1s ease;
 	-moz-transition: all .1s ease;
 	-ms-transition: all .1s ease;
 	-o-transition: all .1s ease;
 	transition: all .1s ease;
-
 }
+
+
 
 
 @media screen and (max-width: 650px) {
-
 .sidebar {
 	display: none;
 }
-  
-  
 .content {
-    padding-left: 0;
-    width: 100%;
+	padding-left: 0;
+	width: 100%;
 }
-
-
-
 }
-
-
 </style>
+
 
 </head>
 
 <body>
 
+<a id="back-to-main" href="/">< Back to Template Overview</a>
+
 
 <div class="sidebar">
-<a href="/">< Back</a>
-<br><br>
-LHN
+
+<h4>Category Title 1</h4>
+
+<a href="#">Sub link 1</a>
+
+<a href="#">Sub link 2</a>
+
+<a href="#">Sub link 3</a>
+
+<a href="#">Sub link 4</a>
+
+<h4>Category Title 2</h4>
+
+<a href="#">Sub link 1</a>
+
+<a href="#">Sub link 2</a>
+
+<a href="#">Sub link 3</a>
+
+<a href="#">Sub link 4</a>
+
 </div>
 
 
@@ -176,8 +224,7 @@ LHN
 </div>
        </a>
 
-  </div>
-  
+
 <div class="btn-container">
 <button id="seg1a-copy-button">Copy Code</button>
 </div>
@@ -200,6 +247,10 @@ LHN
  </textarea>
 
 
+  </div>
+  
+
+
 
 <!-- SEGMENT 1 -->
 
@@ -216,8 +267,7 @@ LHN
 </div>
        </a>
 
-  </div>
-  
+
   
 <div class="btn-container">
 <button id="seg1b-copy-button">Copy Code</button>
@@ -240,6 +290,10 @@ LHN
   
   
  </textarea>
+
+
+  </div>
+  
 
  
  
