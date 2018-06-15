@@ -1,0 +1,143 @@
+
+<style>
+
+#container { 
+	margin-bottom: 2000px;
+	margin-top: 1000px;
+	text-align: center;	
+}
+.trigger-line {
+    background-color: red;
+    height: 1px;
+}
+
+
+.layer1 {
+	position: relative;
+	z-index: 3;
+	background-image: url("https://i1.adis.ws/i/dm/Aura-Matt-Layer-1.png?qlt=75.jpg");
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 145px;
+    margin: 0 auto;
+	width: 600px;
+	transition: all 0.5s ease 0s;
+}
+.move-layer1 {
+	margin-top: 0!important;
+}
+
+
+.layer2 {
+	position: relative;
+	z-index: 2;
+	background-image: url("https://i1.adis.ws/i/dm/Aura-Matt-Layer-2.png?qlt=75.jpg");
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 140px;
+    margin: -110px auto 0;
+	width: 600px;
+	transition: all 0.5s ease 0s;
+}
+.move-layer2 {
+	margin-top: -50px!important;
+}
+
+
+.layer3 {
+	position: relative;
+	z-index: 1;
+	background-image: url("https://i1.adis.ws/i/dm/Aura-Matt-Layer-3.png?qlt=75.jpg");
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 200px;
+    margin: -150px auto 0;
+	width: 600px;
+	transition: all 0.5s ease 0s;
+}
+.move-layer3 {
+	margin-top: -65px!important;
+}
+
+</style>
+
+
+
+
+<script type="text/javascript" src="../../js/lib/jquery.min.js"></script>
+
+<script type="text/javascript" src="../../js/lib/highlight.pack.js"></script>
+    
+<script type="text/javascript" src="../../js/lib/modernizr.custom.min.js"></script>
+    
+<script type="text/javascript" src="../../js/examples.js"></script>
+	
+<script type="text/javascript" src="../../scrollmagic/uncompressed/ScrollMagic.js"></script>
+    
+<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    
+
+
+
+
+
+<div id="container">
+
+	<div id="trigger1" class="trigger-line"></div>
+	<div class="layer1"></div>
+    
+	<div id="trigger2" class="trigger-line"></div>
+	<div id="animate-layer2" class="layer2"></div>
+    
+	<div id="animate-layer3" class="layer3"></div>
+    
+</div>
+            
+     
+     
+     
+     
+              
+            
+
+          
+            
+<script>
+
+// TRIGGER 1
+	
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger1"})
+	
+	// trigger animation by adding a css class
+	.setClassToggle("#animate-layer2", "move-layer2")
+	
+	.addIndicators({name: "TRIGGER 1 HERE"})
+	// add indicators [delete after]
+	
+	.addTo(controller);
+	
+	
+	
+// TRIGGER 2
+	
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+	
+	// trigger animation by adding a css class
+	.setClassToggle("#animate-layer3", "move-layer3")
+	
+	.addIndicators({name: "TRIGGER 2 HERE"})
+	// add indicators [delete after]
+	
+	.addTo(controller);
+	
+	
+
+</script>
