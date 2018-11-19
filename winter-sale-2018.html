@@ -1,327 +1,601 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Dunelm Web Templates</title>
-<link rel="shortcut icon" href="http://www.dunelm.com/favicon.png">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<link type="text/css" rel="stylesheet" href="https://staging.dunelm.com/infodocs/css/site-ws18-styles.css">
-<link type="text/css" rel="stylesheet" href="https://www.dunelm.com/infodocs/css/site_category_styles.css">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-<style>
+@charset "utf-8";
+/* CSS Document */
 
 
-/* TEMPLATE ONLY STYLES */
+/*
+	
+FONTS:
+font-family: Patua One;
+font-family: "Nunito Sans", sans-serif;
 
-.ws18-top-banner h3, .ws18-top-skinny-banner p {
-	margin: 0;
+IMAGES:
+https://i1.adis.ws/i/dm/#INSERT#.jpg?img404=noimagedefault&qlt=80&fmt.jpeg.interlaced=true
+
+CTA ARROW:
+<span data-icon="" style="font-size: 80%"></span>
+
+TRACKING:
+manual_cm_sp="rachel-vosper_lhn-_-link_1-_-wk05-rachel-vosper_lhn"
+
+*/
+
+/* KEY TOOLS START */
+
+.block
+	{
+		margin-left:10px;
+		margin-right:10px;
+	}
+	
+.clear
+	{
+		clear:both;
+		float:none;
+	}
+
+
+/* KEY TOOLS END */
+
+
+/* GRID CODE START */
+	
+.grid 
+	{
+		float:left;
+		width:100%;
+		margin:0px auto 0px auto;
+		padding:0px;
+	}
+	
+.grid .pc12 
+	{
+		float:left;
+		width:100%;
+	}
+	
+.grid .pc11
+	{
+		float:left;
+		width:91.6661%;
+	}
+	
+.grid .pc10
+	{
+		float:left;
+		width:83.3329%;
+	}
+	
+.grid .pc9
+	{
+		float:left;
+		width:74.9997%;
+	}
+
+.grid .pc8
+	{
+		float:left;
+		width:66.6665%;
+	}
+	
+.grid .pc7
+	{
+		float:left;
+		width:58.3328%;
+	}
+	
+.grid .pc6 
+	{
+		float:left;
+		width:49.9996%;
+	}
+	
+.grid .pc5
+	{
+		float:left;
+		width:41.6664%;
+	}
+	
+.grid .pc4
+	{
+		float:left;
+		width:33.3332%;
+	}
+	
+.grid .pc3
+	{
+		float:left;
+		width:24.9997%;
+	}
+	
+.grid .pc2
+	{
+		float:left;
+		width:16.6665%;
+	}
+	
+.grid .pc1
+	{
+		float:left;
+		width:8.3332%;
+	}
+	
+.grid .pc-show
+	{
+		display:block;
+	}
+	
+.grid .pc-hide
+	{
+		display:none;
+	}
+	
+	
+@media screen and (max-width: 1050px) {
+	.grid .tab12 
+		{
+		float:left;
+		width:100%;
+		}
+
+	.grid .tab11
+		{
+			float:left;
+			width:91.6661%;
+		}
+
+	.grid .tab10
+		{
+			float:left;
+			width:83.3329%;
+		}
+
+	.grid .tab9
+		{
+			float:left;
+			width:74.9997%;
+		}
+
+	.grid .tab8
+		{
+			float:left;
+			width:66.6665%;
+		}
+
+	.grid .tab7
+		{
+			float:left;
+			width:58.3328%;
+		}
+
+	.grid .tab6 
+		{
+			float:left;
+			width:49.9996%;
+		}
+
+	.grid .tab5
+		{
+			float:left;
+			width:41.6664%;
+		}
+
+	.grid .tab4
+		{
+			float:left;
+			width:33.3332%;
+		}
+
+	.grid .tab3
+		{
+			float:left;
+			width:24.9997%;
+		}
+
+	.grid .tab2
+		{
+			float:left;
+			width:16.6665%;
+		}
+
+	.grid .tab1
+		{
+			float:left;
+			width:8.3332%;
+		}
+	.grid .tab-show
+		{
+			display:block;
+		}
+	
+	.grid .tab-hide
+		{
+			display:none;
+		}
 }
-p {
-	width: auto!important;
-}
-.lhn-main-container {
-	margin-top: 20px;
-}
-.lhn-main-container img {
-	width: 100%;	
-}
-.lhn-main-text-container h3 {
-	margin-top: 0;
+	
+	
+@media screen and (max-width: 880px) {
+	.grid .mob12 
+		{
+		float:left;
+		width:100%;
+		}
+
+	.grid .mob11
+		{
+			float:left;
+			width:91.6661%;
+		}
+
+	.grid .mob10
+		{
+			float:left;
+			width:83.3329%;
+		}
+
+	.grid .mob9
+		{
+			float:left;
+			width:74.9997%;
+		}
+
+	.grid .mob8
+		{
+			float:left;
+			width:66.6665%;
+		}
+
+	.grid .mob7
+		{
+			float:left;
+			width:58.3328%;
+		}
+
+	.grid .mob6 
+		{
+			float:left;
+			width:49.9996%;
+		}
+
+	.grid .mob5
+		{
+			float:left;
+			width:41.6664%;
+		}
+
+	.grid .mob4
+		{
+			float:left;
+			width:33.3332%;
+		}
+
+	.grid .mob3
+		{
+			float:left;
+			width:24.9997%;
+		}
+
+	.grid .mob2
+		{
+			float:left;
+			width:16.6665%;
+		}
+
+	.grid .mob1
+		{
+			float:left;
+			width:8.3332%;
+		}
+	.grid .mob-show
+		{
+			display:block;
+		}
+	
+	.grid .mob-hide
+		{
+			display:none;
+		}
 }
 
+/* GRID CODE END */
 
-/* MAIN */
 
-.code-ref-container {
-    background-color: #f5f5f5;
-    color: #354555;
+
+
+/* SLIM BANNER CSS START */
+
+.ws18-top-banner-container {
     float: left;
-    margin-bottom: 30px;
-    padding: 10px;
+    margin-bottom: 35px;
+    position: relative;
     width: 100%;
-	border: #cccccc solid 1px;
-	border-radius: 5px;
-}
-a {
-	font-family: Nunito Sans;
-}
-div {
-	box-sizing: border-box;
-}
-body {
-	padding: 40px 0.625em 0;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-.sidebar {
-    box-sizing: border-box;
-    float: left;
-    padding-right: 1.25em;
-    width: 20%;
-}
-.content {
-    border-left: 1px solid #ccc;
-    box-sizing: border-box;
-    float: left;
-    padding-left: 1.25em;
-    width: 80%;
-}
-#back-to-main {
-    color: #ee6612;
-    font-weight: 700;
-    margin-bottom: 15px;
-    display: block;
-    font-size: 15px;
-    text-decoration: none;
-}
- a#back-to-main:hover {
-    text-decoration: underline;
-}
-.sidebar-cat-links {
-}
-.sidebar-cat-links h4 {
-    border-top: 1px dashed #ccc;
-    color: #333;
-    display: block;
-    font-family: Nunito Sans;
-    font-size: 16px;
-    font-weight: 700;
-	margin: 16px 0 0;
-    padding: 16px 6px 2px 0;
-}
-.sidebar-cat-links > a {
-    display: block;
-	color: #333;
-    font-size: 15px;
-    padding: 2px 6px 2px 0;
-    text-decoration: none;
-}
-.sidebar-cat-links > a:hover {
-    text-decoration: underline;
 }
 
-
-
-
-/* COPY CODE BUTTON */
-textarea {
-	position: absolute;
-	margin-left: -9999px;
-}
-.btn-container {
-    bottom: 5px;
-    left: 0;
-    position: absolute;
-    right: 0;
-}
-button {
-	color: #fff;
-	cursor: pointer;
-	font-family: nunito sans;
-	background-color: rgba(219,87,5,1);
-	font-weight: 400;
-	letter-spacing: 0.075em;
-	text-transform: uppercase;
-	font-size: 18px;
-	display: block;
-	padding: 4px 14px;
-	-webkit-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
-	-moz-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
-	box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
-	margin: 0 auto;
-	width: auto;
-	-webkit-transition: all .2s ease;
-	-moz-transition: all .2s ease;
-	-ms-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
-}
-button:active {
-	-webkit-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
-	-moz-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
-	box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
-	position: relative;
-	-webkit-transition: all .1s ease;
-	-moz-transition: all .1s ease;
-	-ms-transition: all .1s ease;
-	-o-transition: all .1s ease;
-	transition: all .1s ease;
+.ws18-top-banner-container a {
+	text-decoration: none; 
 }
 
-
-
-
-@media screen and (max-width: 650px) {
-.sidebar {
-	display: none;
+.ws18-top-skinny-banner {
+    background-color: #ee1c25;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
 }
-.content {
-	padding-left: 0;
+
+.ws18-top-banner h3,
+.ws18-top-skinny-banner p {
+    margin: 0;
+}
+
+.ws18-top-skinny-banner p {
+    font-family: Patua One;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.ws18-top-banner-container {
+	float: left;
+    margin-bottom: 35px;
+    position: relative;
 	width: 100%;
 }
+
+.ws18-top-banner-container a {
+	text-decoration: none; 
 }
-</style>
-</head>
 
+.ws18-top-banner {
+	background-color: #ee1c25;
+	text-align: center;
+	padding: 16px;
+}
 
+.ws18-top-banner img {
+	width: 140px;
+	margin-right: 16px;
+	vertical-align: -50%;
+}
 
-<body>
-<!-- SIDEBAR START-->
-<a id="back-to-main" href="/">< Back to Template Overview</a>
-<div class="sidebar">
-	<div class="sidebar-cat-links">
-		<h4>Category Title 1</h4>
-		<a href="#">Sub link 1</a>
-		<a href="#">Sub link 2</a>
-		<a href="#">Sub link 3</a>
-		<a href="#">Sub link 4</a>
+.ws18-top-banner h3 {
+	color: #fff;
+	font-family: Patua One!important;
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
 
-		<h4>Category Title 2</h4>
-		<a href="#">Sub link 1</a>
-		<a href="#">Sub link 2</a>
-		<a href="#">Sub link 3</a>
-		<a href="#">Sub link 4</a>
-	</div>
-</div>
-<!-- SIDEBAR END-->
+.ws18-percentage-mob {
+	display: none;
+}
 
-<div class="content">
+@media screen and (max-width: 810px) {
+	.ws18-top-banner img {
+		display: none;
+	}
 
+	.ws18-top-banner {
+		padding: 12px;
+	}
 
+	.ws18-top-banner h3 {
+		font-size: 26px;
+		line-height: 31px;
+	}
+	
+	.ws18-percentage-mob {
+		display: block;
+	}
+	
+	.ws18-percentage-mob strong {
+		font-weight: 300!important;
+		font-size: 36px;
+	}
+}
 
-<!-- STYLE SHEET LINKS -->
-<div class="code-ref-container">
-<code>
-&lt;link type="text/css" rel="stylesheet" href="/infodocs/css/site-ws18-styles.css"&gt;
-</code>
-</div>
+@media screen and (max-width: 480px) {
+	.ws18-top-banner h3 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	
+	.ws18-percentage-mob strong {
+		font-weight: 300!important;
+		font-size: 30px;
+	}
+}
 
-
-<div class="code-ref-container">
-<code>
-&lt;link type="text/css" rel="stylesheet" href="/infodocs/css/site_category_styles.css"&gt;
-</code>
-</div>
-<!-- STYLE SHEET LINKS -->
-
-
-
-
-<!-- SLIM BANNERS START -->
-<div class="section-container-title">
-    <div class="intro-section-title">
-      <h2><span>Slim Banner Segments</span></h2>
-      <p>Maecenas posuere eu nisi sed sollicitudin proin hendrerit eu nisi a ultricies</p>
-    </div>
-</div>
-
-
-
-
-<!-- SLIM BANNER START -->
-<div class="ws18-top-banner-container">
-	<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-		<div class="ws18-top-skinny-banner">
-			<p>Up to 30% Off Selected <span data-icon="" style="font-size: 70%; vertical-align:4%;"></span></p>
-		</div>
-	</a>
-</div>
-<!-- SLIM BANNER END -->
-
-
-
-
-<!-- 50% MED BANNER START -->
-<div class="ws18-top-banner-container">
-	<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-		<div class="ws18-top-banner">
-			<h3><img src="https://i1.adis.ws/i/dm/ws18_upto_50off_text.png?qlt=75"><span class="ws18-percentage-mob">Up to <strong>50%</strong> off </span>Selected Furniture <span data-icon="" style="font-size: 80%"></span></h3>
-		</div>
-	</a>
-</div>
-<!-- 50% MED BANNER END -->
+/* SLIM BANNER CSS END */
 
 
 
 
-<!-- 30% MED BANNER START -->
-<div class="ws18-top-banner-container">
-	<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-		<div class="ws18-top-banner">
-			<h3><img src="https://i1.adis.ws/i/dm/ws18_upto_30off_text.png?qlt=75"><span class="ws18-percentage-mob">Up to <strong>30%</strong> off </span>Selected Furniture <span data-icon="" style="font-size: 80%"></span></h3>
-		</div>
-	</a>
-</div>
-<!-- 30% MED BANNER END -->
+
+/* CLP BANNER CSS START */ 
+
+.ws18-category-animated-row-container {
+    height: auto;
+    margin-bottom: 50px;
+	float:left;
+    position: relative;
+    width: 100%%;
+    z-index: 1;
+}
+.ws18-category-animated-row-text {
+    background-color: #ee1c25;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+	min-height: 360px;
+    width: 40%;
+}
+#ws18-category-animated-row-text-wo-links {
+    padding: 40px 20px;
+}
+#ws18-category-animated-row-text-wo-links-large {
+    padding: 80px 20px;
+}
+.ws18-category-animated-row-text img {
+	width: 50%;
+	min-width: 200px;
+	margin-top: 10px;
+	float:left;
+}
+.ws18-category-animated-row-text h2 {
+	color: #fff;
+	font-family: Patua One!important;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 36px;
+	margin-top: 6px;
+	text-align:center;
+}
+.ws18-category-animated-row-text h3 {
+	color: #fff;
+	font-family: Nunito Sans!important;
+	font-size: 31px;
+	font-weight: 300;
+	line-height: 36px;
+	margin-top: 6px;
+	width:50%;
+	max-width:50%;
+	float:right;
+}
+.ws18-category-animated-row-text h3 br {
+	display: block;
+}
+.ws18-category-animated-row-text h4 {
+    background-color: #ee1c25;
+    color: #ffffff;
+    display: block;
+    font-family: Nunito Sans;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 1px solid #ffffff;
+    margin: 15px 1% 0px 2%;
+    width: 46%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 9px;
+}
+.ws18-category-animated-row-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    min-height: 360px;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+	float:left;
+}
+.ws18-category-animated-row-image h5 {
+	width: 100%;
+	bottom: 20px;
+	text-align: center;
+	position: absolute;
+}
+.ws18-category-animated-row-image h5 strong {
+	background-color: rgba(255, 255, 255, 0.65);
+	color: #333;
+	font-family: Nunito Sans;
+	font-size: 21px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	line-height: 28px;
+	padding: 8px 30px;
+	text-transform: uppercase;
+	width: auto;
+}
+.ws18-category-animated-row-bkgd {
+    background-color: #ee1c25;
+    bottom: 0;
+    height: 200px;
+    margin-bottom: -40px;
+    position: absolute;
+    right: -2.75%;
+    width: 43%;
+    z-index: -2;
+}
+
+@media screen and (max-width: 810px) {
+.ws18-category-animated-row-container {
+	margin-top: 0;
+	width: 100%;
+}
+.ws18-category-animated-row-text {
+	width: 100%;
+}
+#ws18-category-animated-row-text-wo-links {
+    padding: 20px;
+}
+#ws18-category-animated-row-text-wo-links-large {
+    padding: 20px;
+}
+.ws18-category-animated-row-text img {
+	width: 35%;
+	min-width: 150px;
+	margin-top: 0;
+}
+.ws18-category-animated-row-text h3 {
+	font-size: 29px;
+	line-height: 34px;
+}
+.ws18-category-animated-row-text h4 {
+	font-size: 18px;
+	line-height: 31px;
+	margin-top: 17px;
+}
+.ws18-category-animated-row-image {
+	position: relative;
+	height: 320px;
+	margin-top: 0;
+	width: 100%;
+}
+.ws18-category-animated-row-bkgd {
+	display: none;
+}
+}
+ @media screen and (max-width: 480px) {
+.ws18-category-animated-row-text h3 {
+	font-size: 27px;
+	line-height: 31px;
+}
+.ws18-category-animated-row-text h4 {
+	max-width: 100%;
+	font-size: 16px;
+	line-height: 23px;
+	letter-spacing: 2px;
+}
+.ws18-category-animated-row-image {
+	height: 250px;
+   padding:15px;
+}
+.ws18-category-animated-row-image h5 {
+  margin-top:195px;
+	position: relative;
+  padding: 8px 30px;
+  	background-color: rgba(255, 255, 255, 0.65);
+}
+.ws18-category-animated-row-image h5 strong {
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 19px;
+	line-height: 26px;
+}
+}
 
 
 
 
-<!-- 20% MED BANNER START -->
-<div class="ws18-top-banner-container">
-	<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-		<div class="ws18-top-banner">
-			<h3><img src="https://i1.adis.ws/i/dm/ws18_upto_20off_text.png?qlt=75"><span class="ws18-percentage-mob">Up to <strong>20%</strong> off </span>Selected Furniture <span data-icon="" style="font-size: 80%"></span></h3>
-		</div>
-	</a>
-</div>
-<!-- 20% MED BANNER END -->
-
-
-
-
-<!-------------------------------------------------------------->
-
-
-
-
-<!-- CLP / PLP BANNERS START -->
-<div class="section-container-title">
-    <div class="intro-section-title">
-      <h2><span>CLP / PLP Banner Segments</span></h2>
-      <p>Maecenas posuere eu nisi sed sollicitudin proin hendrerit eu nisi a ultricies</p>
-    </div>
-</div>
-
-
-
-
-<!-- GIF BANNER WITH 5 CTAS START -->
-<div class="section-container">
-	<div class="ws18-category-animated-row-container">
-		<div class="ws18-category-animated-row-text">   
-			<h2>The big sale</h2>   
-			<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-				<img src="https://i1.adis.ws/i/dm/ws18_upto_50off_text.png?qlt=75">
-				<h3>Selected Bedding <span data-icon="" style="font-size: 55%; vertical-align:3%;"></span></h3>
-			</a>
-			<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-				<h4>Bedding <span data-icon="" style="font-size: 75%; vertical-align:4%;"></span></h4>
-			</a>
-			<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-				<h4>Furniture <span data-icon="" style="font-size: 75%; vertical-align:4%;"></span></h4>
-			</a>
-			<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-				<h4>Bedding <span data-icon="" style="font-size: 75%; vertical-align:4%;"></span></h4>
-			</a>
-			<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-				<h4>Furniture <span data-icon="" style="font-size: 75%; vertical-align:4%;"></span></h4>
-			</a>
-		</div>
-		<a href="#" manual_cm_sp="###-_-link_1-_-wk###-###">
-			<div style="background-image: url(http://dm.a.bigcontent.io/v1/static/bedding_gif_banner_ee17);" class="ws18-category-animated-row-image">
-				
-			</div>
-		</a>
-	</div>
-</div>
-<!-- GIF BANNER WITH 5 CTAS END -->		
-
-
-
-</div>		
-</body>
-</html>
