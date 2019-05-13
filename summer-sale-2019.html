@@ -210,34 +210,74 @@ button:active {
 
 <div class="section-container-title">
     <div class="intro-section-title">
-      <h2><span>CLP Banners - 1 CTA</span></h2>
+      <h2><span>CLP Banners - 1x CTA</span></h2>
     </div>
 </div>
 	
 <style type="text/css">
-a.ss19-banner-A1 {
+.cta::after {
+    content: "\E015";
+    font-family: icomoon;
+    font-size: larger;
+    vertical-align: -4%;
+}
+	
+a.ss19-background-image {
 	width:100%;
 	height:auto;
-	padding:20px 30px;
 	color:#ffffff;
 	text-decoration: none;
 	float:left;
 	margin-bottom:30px;
-	background:rgba(0,99,96,0.80);
+	background-size: cover!important;
+	background-position: center center!important;
+	text-align:center;
 }
 	
-a.ss19-banner-A1 .background-image {
+a.ss19-background-image .ss19-banner-A1 {
 	width:100%;
 	height:auto;
-	background-size: cover;
-	background-position: center center;
+	float:left;
+	padding: 20px 30px;
+	background:rgba(238,28,37,0.80);
+}
+	
+a.ss19-background-image img {
+    width: 120px;
+    padding-right: 10px;
+    height: auto;
+	display:inline-block;
+	margin-bottom:-20px;
+}
+	
+a.ss19-background-image h3 {
+	display: inline-block;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+	font-family: Nunito Sans;
+}
+	
+a.ss19-background-image h4.cta {
+    background: #ffffff;
+    color: #d71b23;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+	font-family: Nunito Sans;
+    padding: 7px 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+	margin-bottom: 0px;
+    margin-top: 10px;
 }
 </style>
 	
-<a href="#" class="ss19-banner-A1">
-	<div class="background-image" style="">
+<a href="#" class="ss19-background-image" style="background:url(https://i1.adis.ws/i/dm/ss19-clp-test-img.jpg?img404=noimagedefault&qlt=80&fmt.interlaced=true);" >
+	<div class="ss19-banner-A1">
 		<img src="https://i1.adis.ws/i/dm/ss19-20off-white.png?img404=noimagedefault&qlt=80&fmt.interlaced=true" />
-		</h3>Selected Furniture<h3>
+		<h3>Selected Furniture</h3>
 		<div class="clear"><!-- //--></div>
 		<h4 class="cta">Shop furniture Sale </h4>
 	</div>
