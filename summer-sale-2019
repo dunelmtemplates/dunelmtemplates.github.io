@@ -1,0 +1,232 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Dunelm Web Templates</title>
+<link rel="shortcut icon" href="http://www.dunelm.com/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://staging.dunelm.com/infodocs/css/site-ws18-styles.css">
+<link type="text/css" rel="stylesheet" href="https://www.dunelm.com/infodocs/css/site_category_styles.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+<style> @font-face{font-family:icomoon;src:url(https://dunelmtemplates.github.io/icons/thin-arrow.eot?s34bh);src:url(https://dunelmtemplates.github.io/icons/thin-arrow.eot?s34bh#iefix) format('embedded-opentype'),url(https://dunelmtemplates.github.io/icons/thin-arrow.ttf?s34bh) format('truetype'),url(https://dunelmtemplates.github.io/icons/thin-arrow.woff?s34bh) format('woff'),url(https://dunelmtemplates.github.io/icons/thin-arrow.svg?s34bh#icomoon) format('svg');font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-thin-arrow:before{content:"\e900"}.checkbox--custom .checkbox_render::after,.espot__link-list a::after,.l-checkout-basket__extras--toggle::after,.l-checkout-basket__item__remove::after,.l-search-results__result__carousel .slick-next::before,.l-search-results__result__carousel .slick-prev::before,.menu-lhs__item a::after,.menu-lhs__open::after,.menu-myaccount__item a::after,.menu-myaccount__open::after,.parsley-error-list li::before,.pdp .slick-next::before,.pdp .slick-prev::before,.radio--custom .radio--custom__render::after,[data-icon]::before{content:attr(data-icon);font-family:icomoon;font-variant:normal;font-weight:400;line-height:1;text-transform:none}
+</style>
+
+<style>
+
+
+/* TEMPLATE ONLY STYLES */
+
+.ws18-top-banner h3, .ws18-top-skinny-banner p {
+	margin: 0;
+}
+p {
+	width: auto!important;
+}
+.lhn-main-container {
+	margin-top: 20px;
+}
+.lhn-main-container img {
+	width: 100%;	
+}
+.lhn-main-text-container h3 {
+	margin-top: 0;
+}
+
+
+/* MAIN */
+
+.code-ref-container {
+    background-color: #f5f5f5;
+    color: #354555;
+    float: left;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+	border: #cccccc solid 1px;
+	border-radius: 5px;
+}
+a {
+	font-family: Nunito Sans;
+}
+div {
+	box-sizing: border-box;
+}
+body {
+	padding: 40px 0.625em 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.sidebar {
+    box-sizing: border-box;
+    float: left;
+    padding-right: 1.25em;
+    width: 20%;
+}
+.content {
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 1.25em;
+    width: 80%;
+}
+#back-to-main {
+    color: #ee6612;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+}
+ a#back-to-main:hover {
+    text-decoration: underline;
+}
+.sidebar-cat-links {
+}
+.sidebar-cat-links h4 {
+    border-top: 1px dashed #ccc;
+    color: #333;
+    display: block;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 700;
+	margin: 16px 0 0;
+    padding: 16px 6px 2px 0;
+}
+.sidebar-cat-links > a {
+    display: block;
+	color: #333;
+    font-size: 15px;
+    padding: 2px 6px 2px 0;
+    text-decoration: none;
+}
+.sidebar-cat-links > a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* COPY CODE BUTTON */
+textarea {
+	position: absolute;
+	margin-left: -9999px;
+}
+.btn-container {
+    bottom: 5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+button {
+	color: #fff;
+	cursor: pointer;
+	font-family: nunito sans;
+	background-color: rgba(219,87,5,1);
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	font-size: 18px;
+	display: block;
+	padding: 4px 14px;
+	-webkit-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
+	box-shadow: 0px 5px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.3);
+	margin: 0 auto;
+	width: auto;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+button:active {
+	-webkit-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
+	box-shadow: 0px 2px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.5);
+	position: relative;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+.sidebar {
+	display: none;
+}
+.content {
+	padding-left: 0;
+	width: 100%;
+}
+}
+</style>
+</head>
+
+
+
+<body>
+<!-- SIDEBAR START-->
+<a id="back-to-main" href="/">< Back to Template Overview</a>
+<div class="sidebar">
+	<div class="sidebar-cat-links">
+		<h4>Category Title 1</h4>
+		<a href="#">Sub link 1</a>
+		<a href="#">Sub link 2</a>
+		<a href="#">Sub link 3</a>
+		<a href="#">Sub link 4</a>
+
+		<h4>Category Title 2</h4>
+		<a href="#">Sub link 1</a>
+		<a href="#">Sub link 2</a>
+		<a href="#">Sub link 3</a>
+		<a href="#">Sub link 4</a>
+	</div>
+</div>
+<!-- SIDEBAR END-->
+
+<div class="content">
+
+
+
+<!-- STYLE SHEET LINKS -->
+<div class="code-ref-container">
+<code>
+&lt;link type="text/css" rel="stylesheet" href="/infodocs/css/site-ws18-styles.css"&gt;
+</code>
+</div>
+
+
+<div class="code-ref-container">
+<code>
+&lt;link type="text/css" rel="stylesheet" href="/infodocs/css/site_category_styles.css"&gt;
+</code>
+</div>
+<!-- STYLE SHEET LINKS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>		
+</body>
+</html>
